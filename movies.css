@@ -5,6 +5,7 @@
 body {
     background-color: #131720;
     font-family: sans-serif;
+    min-width: 300px;
 }
 
 h3 {
@@ -57,19 +58,54 @@ h3 {
 .column {
     float: left;
     width: 25%;
-    padding: 10px 10px;
+    padding: 12px 10px;
 }
 
 .card {
     border-radius: 19px;
     padding: 15px;
-    height: 470px;
+    height: 512px;
     text-align: center;
+    font-size: 2vh;
     background-color: #151f30;
 }
 
 .thumbnail {
-    height: 350px;
-    width: 300px;
+    height: 400px;
+    width: 100%;
     border-radius: 19px;
+}
+
+@media only screen and (max-width:1200px) {
+
+    .column {
+        width: 33%;
+    }
+
+}
+
+@media only screen and (max-width:800px) {
+    .column {
+        width: 48%;
+    }
+}
+
+@media only screen and (max-width:570px) {
+    .column {
+        width: 98%;
+    }
+
+    .top-nav a {
+        text-align: center;
+        float: none
+    }
+
+    .top-nav .search-container {
+        float: none;
+    }
+
+    #form {
+        width: 98%;
+    }
+
 }
